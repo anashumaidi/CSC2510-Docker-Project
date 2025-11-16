@@ -42,7 +42,7 @@ func main() {
 	if err = db.Ping(); err != nil {
 		log.Fatal("Cannot connect to database:", err)
 	}
-	log.Println("Connected to PostgreSQL!")
+	log.Println("Docker project by Anas Humaidi")
 
 	http.HandleFunc("/users", getUsers)
 	http.HandleFunc("/add", addUser)
